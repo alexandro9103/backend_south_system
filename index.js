@@ -20,8 +20,9 @@ app.use(routerUsers());
 
 
 
-const PORT = process.env.PORT;
+const HOST = process.env.HOST || '0.0.0.0'
+const PORT = process.env.PORT || 5000;
 module.exports = app;
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
     console.log(`The API is running at port ${PORT}`);
 })
