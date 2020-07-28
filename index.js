@@ -18,11 +18,8 @@ app.use(routerUsers());
 
 
 
-
-
 const HOST = process.env.HOST || '0.0.0.0'
 const PORT = process.env.PORT || 5000;
-module.exports = app;
 app.listen(PORT, HOST, () => {
-    console.log(`The API is running at port ${PORT}`);
+    console.log(`The API is running at port ${PORT} HOST: ${HOST}`);
 })
