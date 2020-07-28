@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
+//const dotenv = require('dotenv');
 const routerProducts = require('./routes/router.products');
 const routerUsers = require('./routes/router.users');
 const cors = require('cors');
-dotenv.config();
+//dotenv.config();
 
 require('./database/config');
 const app = express();
