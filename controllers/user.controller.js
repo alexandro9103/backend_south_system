@@ -38,7 +38,5 @@ exports.createUser = async (req, res) => {
         });
     }
 
-    //Video de TEST
-    //https://www.youtube.com/watch?v=2G_mWfG0DZE
 }
 

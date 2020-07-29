@@ -14,7 +14,7 @@ exports.authenticate = async (req, res) => {
         });
     } else {
         if (!bcrypt.compareSync(body.password, user.password)) {
-            return res.json({
+            return res.status(401).json({
                 message: 'A senha digitada é incorreta',
                 token: null,
             });
